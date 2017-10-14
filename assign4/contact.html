@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- link to external cascading style sheet ------>
+	<link type="text/css" rel="stylesheet" href="Bebuoyant.css"/>
+	<title>Be Buoyant-Contact Us</title>
+	
+</head>
+
+<body>
+
+
+<header>
+<!--ribbon at the top of the page ------>
+	<div></div>
+	<br/><br/>
+	<!--Company name "BBuoyant" ------>
+	<img id="title" src="http://zenit.senecac.on.ca/~uli705_171a12/assign4/images/title.png" alt="title"/> 
+	
+</header>
+	<!--Pic of products ------>
+	<img id="main" src="http://zenit.senecac.on.ca/~uli705_171a12/assign4/images/pic.png" alt="title"/> 
+	<br/> <br/><br/><br/><br/><br/><br/><br/>
+
+	<nav>
+	<!--link to home and product pages ------>
+		<h3><a href="http://zenit.senecac.on.ca/~uli705_171a12/assign4/assign4.html"> Home </a> ||
+		<a href="http://zenit.senecac.on.ca/~uli705_171a12/assign4/products.html">Products </a> ||
+		<a href="http://zenit.senecac.on.ca/~uli705_171a12/assign4/contact.html">Contact Us </a></h3> 		
+	</nav>
+	<!--Company contact information ------>
+	<h3 class="cont">Call us:</h3>
+	<p class="cont">
+	We're available 24 hours a day.<br/>
+	+(647)-554-1318
+	</p><br/>
+	<h3 class="cont">Mail us:</h3>
+	<p class="cont">
+	Be Buoyant Canada,<br/>
+	81 Gerry Fitzgerald Drive, <br/>
+	North York,<br/>
+	M3J 3N4.
+	</p><br/>
+	<h3 class="cont">EMail us:</h3>
+	<p class="cont">
+	bbuoyant@gmail.com||<a href="mailto:mhimachalapathy@senecacollege.ca">&nbsp;Email Us </a>
+	</p><br/>
+	<h3> Subscribe to be a VIP Customer and recieve information on future promotions</h3>
+	<!--VIP Customer form ------>
+	<form >
+	<table class="custform">
+	<tr >
+	<td class="custform">First name: </td>
+	<td class="custform"> <input type="text" name="firstname" id="firstname" /></td>
+	</tr>
+	<tr>
+	<td class="custform">Last name:  </td>
+	<td class="custform"><input type="text" name="lastname" id="lastname"  /></td>
+	</tr>
+	<tr>
+	<td class="custform">Phone Number:</td>
+	<td class="custform"><input type="text" name="Phone Number" id="phone" placeholder="10 digit phone number" /></td>
+	</tr>
+	<tr>
+	<td class="custform">Email:</td>
+	<td class="custform"><input type="text" name=" Email" id="email" placeholder="example@gmail.com" /></td>
+	</tr>
+	<tr>
+	<td class="custform">
+	<br /><br />
+	<input type="submit" value="Submit" onclick="return val()" />  
+	</td>
+	<td class="custform">
+	<br /><br />
+	<input  type="reset" value="Reset" />
+	</td>
+	</tr>
+	</table>
+	</form>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<script type="text/javascript">
+		function val(){
+		var f = fname();
+		var l = lname();
+		var p = valphone();
+		var m = valemail();
+		if ( f = true && l == true && p == true && m == true){
+			return true;
+		}
+		function fname(){
+		var first = document.getElementById("firstname").value;
+		if(  first.length == 0 || first == null  || first == "" ){
+		 alert("You have not entered anything.Please enter your first name.");
+		 return false;
+		}
+		else 
+		if(/^[0-9]+/.test(first)){
+		 alert("Your first name cannot start with a digit."); 
+		 return false;
+		 }
+		 return true;
+		}
+		function lname(){
+		var last = document.getElementById("lastname").value;
+		if(  last.length == 0 || last == null  || last == "" ){
+		 alert("You have not entered anything.Please enter your last name.");
+		 return false;
+		}
+		else 
+		if(/^[0-9]+/.test(last)){
+		 alert("Your last name cannot start with a digit.");
+		 return false;		 
+		 }
+		 return true;
+		}
+		function valphone(){
+	    var phone = document.getElementById("phone").value;
+		if(  phone.length == 0||phone==null || phone=="" ){
+		 alert("You have not entered anything.Please enter your phone number.");
+		return false;		 
+		}
+		else 
+		if(/^([0-9]){10}$/.test(phone)){
+		 alert("Please enter a valid 10 digit phone number"); 
+		 return false;
+		}
+		return true;
+		}
+		function valemail(){
+		var mail = document.getElementById("email").value;
+		if(  mail.length == 0||mail==null || mail=="" ){
+		 alert("You have not entered anything.Please enter your email id.");
+			return false;		 
+		}
+		else 
+			if(!/^[A-Za-z0-9]+([.][A-Za-z0-9]+)?@[A-Za-z0-9]{2,3}$/.test(mail)){
+			 alert("Please enter a valid email id.Format should be name@gmail.com");
+             return false;			 
+			}
+			return true;
+		}
+		}
+</script>
+<br />
+<footer>
+	<!--Company Address ------>
+	<img id="footertitle" src="http://zenit.senecac.on.ca/~uli705_171a12/assign4/images/title.png" alt="title"/>
+    <h3>Company Address:</h3>
+	
+	<p class="contact">
+	Be Buoyant Canada,<br/>
+	81 Gerry Fitzgerald Drive, <br/>
+	North York,<br/>
+	M3J 3N4.<br/>
+	Telephone:+(647)-554-1318.
+	</p><br/>
+	<!--Copyright info ------>
+	<p class="contact">&nbsp;Copyright&copy;2017, Mythrehee Himachalapathy</p>
+</footer>
+</body>
+</html>

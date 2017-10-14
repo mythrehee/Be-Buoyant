@@ -1,0 +1,18 @@
+drop table BBproducts;
+create table BBproducts(
+no int(30) NOT NULL AUTO_INCREMENT,
+name varchar(40),
+pathname varchar(100),
+code varchar(6),
+price float(6,2),
+quantity int(6),
+primary key(no),
+unique(code)
+);
+ 
+ load data local infile "data.csv"
+ into table BBproducts
+ fields terminated by ","
+(name,pathname,code,price,quantity);
+
+select * from BBproducts;

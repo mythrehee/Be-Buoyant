@@ -1,0 +1,125 @@
+/*color and height of the ribbon at the top of the page*/
+div{
+    height: 50px;
+    background-color: orange;
+}
+/*Name and Logo of the company*/
+#title{
+	display: block;
+	float: left;
+	margin: auto;
+	height: 150px;
+        width: 35%;
+}
+
+/*pic in home page*/
+#main{
+       position: absolute;
+       top: 50px;
+       right: 5px;
+       height: 500px;
+       width: 65%;
+	
+}
+h1{
+	font-size: 500%;
+	font-family:  'Monotype Corsiva';
+	text-align: right;
+}
+h2{
+	font-family:  'Monotype Corsiva';
+	
+}
+
+h3{
+	font-family:  'Monotype Corsiva';
+	
+}
+body{
+      height: 5px;
+      background-color:rgba(0,0,255,0.04);
+      background-repeat:no-repeat;
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Monotype Corsiva';
+}
+/*Info about the company*/
+.sitecontent{
+	float: left;
+	width:69%;
+	text-align: left;
+	border:0px solid black;
+}
+table, th, td{
+	border:1px solid black;
+	text-align: center;
+	font-family:  'Monotype Corsiva';
+	}
+
+iframe[seamless] { 
+    display: block;
+	float: center;
+}
+	
+/*VIP Customer form*/	
+.custform{
+	float: left;
+	border:0px solid black;
+	text-align: left;
+	width:35%;
+	margin: 0cm 0cm 0cm 0.5cm;
+	
+}
+table {
+	
+        margin: 0px auto;
+	width: 50%;
+	height: 50px;
+}
+th{
+	background-color: #ffa500;
+}
+img{
+     height: 100px;
+     width: 130px;
+}
+.tabs{
+              text-align: center;
+}
+/*Contact Info in Contact Page*/
+.cont{
+	margin: 0cm 0cm 0cm 1cm;
+	font-family: 'Monotype Corsiva';
+}
+.contact{
+	margin: auto;
+	font-family: 'Monotype Corsiva';
+	text-align:center;
+	
+}
+input[type=submit]{
+        font-family: 'Monotype Corsiva';
+	font-weight:bold;
+}
+input[type=button]{
+        font-family: 'Monotype Corsiva';
+	font-weight:bold;
+}
+input[type=reset]{
+        font-family: 'Monotype Corsiva';
+	font-weight:bold;
+}
+/*Company name in the footer*/
+#footertitle{
+	display: block;
+	margin: auto;
+	height: 45px;
+        width: 10%;
+}
+footer{
+	background-color:orange;
+	font-family:'Monotype Corsiva';
+	text-align: center;
+}

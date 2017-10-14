@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- link to external cascading style sheet ------>
+	<link type="text/css" rel="stylesheet" href="Bebuoyant.css"/>
+	<title>Be Buoyant-products List</title>
+</head>
+
+<body>
+<header>
+<!--ribbon at the top of the page ------>
+	<div></div>
+	<br/><br/>
+	 <!--Company name "BBuoyant" ------>
+	<img id="title" src="http://zenit.senecac.on.ca/~uli705_171a12/assign3/title.png" alt="title"/> 
+	<h1>Product List &nbsp;</h1> 
+</header>
+
+	<nav class="tabs">
+	<!--link to home and contact pages ------>
+		<h3><a href="http://zenit.senecac.on.ca/~uli705_171a12/assign3/assign3.html"> Home </a> ||
+		<a href="http://zenit.senecac.on.ca/~uli705_171a12/assign3/products.html">Products </a> ||
+		<a href="http://zenit.senecac.on.ca/~uli705_171a12/assign3/contact.html">Contact Us </a></h3> 		
+	</nav>
+	<br/>
+	<form class="tabs" action=pro.php method="POST"><br />
+    <input type="submit" name="products" value="Display Products Table"/>
+	<input type = "button" name="Add" value = "Add Product" onclick="location.href='http://zenit.senecac.on.ca/~uli705_171a12/assign4/addproduct.html'"/>
+	<input type = "button" value = "Delete Product" onclick="location.href='http://zenit.senecac.on.ca/~uli705_171a12/assign4/deleteproduct.html'"/>
+    </form>
+	<br />
+	<form class="tabs" action=addproduct.php method="POST" ><br/>
+	<label for="name">Product Name :</label>
+	<input type="text" name="name" id=name />&nbsp; 
+	<label for="code">Product Code :</label>
+	<input type="text" name="code" id=code />&nbsp; 
+	<label for="price">Price :</label>
+	<input type="text" name="price" id=price />&nbsp; 
+	<label for="qty">Quantity :</label>
+	<input type="text" name="quantity" id=quantity />
+	<br /><br />
+	 <input type="submit" name="add" value="Add Product"/>
+	 <input type="reset" name="reset" value="Reset"/>
+	 <form/><br />
+ 	<!--Product List ------>
+	<script type="text/javascript">	
+	function add(){
+		location.href="http://zenit.senecac.on.ca/~uli705_171a12/assign4/addproduct.html";
+	}
+	function delete(){
+		location.href="http://zenit.senecac.on.ca/~uli705_171a12/assign4/deleteproduct.html";
+	}
+	
+</script>
+<footer>
+<!--Company Address ------>
+    <h3>Company Address:</h3>
+	<img id="footertitle" src="http://zenit.senecac.on.ca/~uli705_171a12/assign3/title.png" alt="title"/>
+	<p class="contact">
+	Be Buoyant Canada,<br/>
+	81 Gerry Fitzgerald Drive, <br/>
+	North York,<br/>
+	M3J 3N4.<br/>
+	Telephone:+(647)-554-1318.
+	</p>
+	<!--Copyright info ------>
+	<p>&nbsp;Copyright&copy;2017, Mythrehee Himachalapathy</p>
+</footer>
+</body>
+</html>
